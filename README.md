@@ -15,6 +15,14 @@ docker pull kesertki/whisper
 To run the Docker container, use the following command:
 
 ```bash
+docker run --rm kesertki/whisper --help
+```
+
+This command will display the help message for the Whisper command-line interface.
+
+To transcribe an audio file, you can use the following command:
+
+```bash
 docker run --rm -v $(pwd):/app kesertki/whisper /app/input.wav --model=tiny --output_format=json --language=en --output_dir=/app
 ```
 
