@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip install git+https://github.com/openai/whisper.git
 
 ARG MODEL=tiny
-RUN whisper --model ${MODEL} dummy.webm; exit 0
+RUN whisper --model ${MODEL} example.mp3; exit 0
 
 ENTRYPOINT ["whisper"]
 CMD ["--help"]

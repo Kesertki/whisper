@@ -28,6 +28,11 @@ docker run --rm -v $(pwd):/app kesertki/whisper /app/input.wav --model=tiny --ou
 
 This command mounts the current directory to `/app` inside the container, allowing you to process audio files located in your current directory. Replace `input.wav` with the name of your audio file.
 
+Example command to transcribe an audio file:
+
+```bash
+docker run --rm -v $(pwd):/app kesertki/whisper /app/example.mp3 --model=tiny --output_format=json --language=en --output_dir=/app
+```
 
 ## Building the Docker Image
 
