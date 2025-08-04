@@ -1,6 +1,6 @@
 # Whisper Docker Image
 
-This is a Dockerfile for building a Docker image that contains the OpenAI Whisper project. It allows you to run the Whisper model for speech recognition tasks.
+This is a Dockerfile for building a Docker image that contains the [OpenAI Whisper](https://github.com/openai/whisper) project. It allows you to run the Whisper model for speech recognition tasks.
 
 ## Running from Docker Hub
 
